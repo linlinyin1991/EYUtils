@@ -7,10 +7,10 @@ Pod::Spec.new do |s|
     EYUtils is a basic tools,such as Category for common objects
                    DESC
 
-  s.homepage         = 'https://code.bkjk-inc.com/projects/MF/repos/EYUtils_ios/browse'
+  s.homepage         = 'https://github.com/linlinyin1991/ELUtility'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author             = { "ElaineYin" => "linlinyin1991@163.com" }
-  s.source       = { :git => 'https://code.bkjk-inc.com/scm/mf/EYUtils_ios.git', :tag => '#{s.version}' }
+  s.author             = { 'ElaineYin' => 'linlinyin1991@163.com' }
+  s.source       = { :git => 'https://github.com/linlinyin1991/ELUtility.git', :tag => '#{s.version}' }
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
   s.frameworks = 'UIKit'
