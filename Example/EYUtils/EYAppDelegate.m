@@ -7,12 +7,12 @@
 //
 
 #import "EYAppDelegate.h"
-
+#import "EYViewController.h"
 @implementation EYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window.rootViewController = [EYViewController new];
     return YES;
 }
 

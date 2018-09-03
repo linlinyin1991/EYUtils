@@ -1,42 +1,42 @@
-#
-# Be sure to run `pod lib lint EYUtils.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'EYUtils'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of EYUtils.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.name         = "EYUtils"
+  s.version      = "2.0.1"
+  s.summary      = "EYUtils is a basic tools"
+  s.description  = <<-DESC
+    EYUtils is a basic tools,such as Category for common objects
+                   DESC
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/yinll/EYUtils'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://code.bkjk-inc.com/projects/MF/repos/EYUtils_ios/browse'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'yinll' => 'yinll@yiche.com' }
-  s.source           = { :git => 'https://github.com/yinll/EYUtils.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.author             = { "ElaineYin" => "linlinyin1991@163.com" }
+  s.source       = { :git => 'https://code.bkjk-inc.com/scm/mf/EYUtils_ios.git', :tag => '#{s.version}' }
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'EYUtils/Classes/**/*'
+  s.requires_arc = true
+  s.frameworks = 'UIKit'
+  s.public_header_files = 'EYUtils/EYUtils.h'
+  s.source_files  = 'EYUtils/EYUtils.h'
   
-  # s.resource_bundles = {
-  #   'EYUtils' => ['EYUtils/Assets/*.png']
-  # }
+  s.subspec 'Date' do |spec|
+      spec.source_files = 'EYUtils/Category/{NSDate,NSCalendar,NSDateFormatter}+*.{h,m}'
+  end
+  s.subspec 'String' do |spec|
+      spec.source_files = 'EYUtils/Category/{NSString,NSMutableString}+*.{h,m}'
+  end
+  s.subspec 'Color' do |spec|
+      spec.source_files = 'EYUtils/Category/UIColor+*.{h,m}'
+  end
+  s.subspec 'Image' do |spec|
+      spec.source_files = 'EYUtils/Category/UIImage+*.{h,m}'
+  end
+  s.subspec 'View' do |spec|
+      spec.source_files = 'EYUtils/Category/UIView+*.{h,m}'
+  end
+  s.subspec 'Macro' do |spec|
+      spec.source_files = 'EYUtils/Macro/*.{h,m}'
+  end
+  s.subspec 'Number' do |spec|
+      spec.source_files = 'EYUtils/Category/NSNumber+*.{h,m}'
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

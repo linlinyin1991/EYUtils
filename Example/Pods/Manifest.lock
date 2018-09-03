@@ -1,0 +1,30 @@
+PODS:
+  - EYUtils (2.0.1):
+    - EYUtils/Color (= 2.0.1)
+    - EYUtils/Date (= 2.0.1)
+    - EYUtils/Image (= 2.0.1)
+    - EYUtils/Macro (= 2.0.1)
+    - EYUtils/Number (= 2.0.1)
+    - EYUtils/String (= 2.0.1)
+    - EYUtils/View (= 2.0.1)
+  - EYUtils/Color (2.0.1)
+  - EYUtils/Date (2.0.1)
+  - EYUtils/Image (2.0.1)
+  - EYUtils/Macro (2.0.1)
+  - EYUtils/Number (2.0.1)
+  - EYUtils/String (2.0.1)
+  - EYUtils/View (2.0.1)
+
+DEPENDENCIES:
+  - EYUtils (from `../`)
+
+EXTERNAL SOURCES:
+  EYUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EYUtils: f31fa4f43d56549853e64f27c73d5eff6f1f4395
+
+PODFILE CHECKSUM: 7a9df11e975adcb601a036df7e43cfa76c31bc7f
+
+COCOAPODS: 1.5.3

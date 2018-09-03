@@ -1,0 +1,55 @@
+{
+  "name": "EYUtils",
+  "version": "2.0.1",
+  "summary": "EYUtils is a basic tools",
+  "description": "EYUtils is a basic tools,such as Category for common objects",
+  "homepage": "https://code.bkjk-inc.com/projects/MF/repos/EYUtils_ios/browse",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ElaineYin": "linlinyin1991@163.com"
+  },
+  "source": {
+    "git": "https://code.bkjk-inc.com/scm/mf/EYUtils_ios.git",
+    "tag": "#{s.version}"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "frameworks": "UIKit",
+  "public_header_files": "EYUtils/EYUtils.h",
+  "source_files": "EYUtils/EYUtils.h",
+  "subspecs": [
+    {
+      "name": "Date",
+      "source_files": "EYUtils/Category/{NSDate,NSCalendar,NSDateFormatter}+*.{h,m}"
+    },
+    {
+      "name": "String",
+      "source_files": "EYUtils/Category/{NSString,NSMutableString}+*.{h,m}"
+    },
+    {
+      "name": "Color",
+      "source_files": "EYUtils/Category/UIColor+*.{h,m}"
+    },
+    {
+      "name": "Image",
+      "source_files": "EYUtils/Category/UIImage+*.{h,m}"
+    },
+    {
+      "name": "View",
+      "source_files": "EYUtils/Category/UIView+*.{h,m}"
+    },
+    {
+      "name": "Macro",
+      "source_files": "EYUtils/Macro/*.{h,m}"
+    },
+    {
+      "name": "Number",
+      "source_files": "EYUtils/Category/NSNumber+*.{h,m}"
+    }
+  ]
+}
